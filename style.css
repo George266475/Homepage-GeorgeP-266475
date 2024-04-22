@@ -1,3 +1,38 @@
+*{
+   box-sizing: border-box;
+}
+
+html{
+   height: 100%
+}
+
+body{
+   background: rgb(27,41,29);
+   background: radial-gradient(circle, rgba(27,41,29,1) 0%, rgba(6,22,8,1) 100%); 
+   margin: 0;
+   text-align: center;
+   padding: 0 30px;
+}
+
+h1{
+   margin-top:100px;
+   margin-bottom:25px;
+   font-size:150px;
+   font-family: 'Fondamento', sans-serif;
+   color: #fff;
+}
+
+a{
+   text-decoration: none;
+}
+
+#clock {
+   position:absolute;
+   bottom:10px;
+   right:10px;
+}
+
+
 /*
 =================================================
 SEARCH
@@ -25,4 +60,88 @@ form{
     background:#000;
     color:#FFF;
  }
+
+ /*
+=================================================
+BOOKMARKS
+=================================================
+*/
+.bookmarks a{
+   text-decoration: none;
+}
+.bookmarks{
+   padding:30px;
+   clear:both;
+}
+.bookmarks i{
+   font-size:42px;
+   margin:0 20px;
+   color:#fff;
+   transition:.15s;
+   vertical-align: top;
+   cursor: pointer;
+   text-decoration:none;
+}
+.bookmarks i:hover{
+   font-size:72px;
+   position:relative;
+   color:#fff;
+}
+
+/*
+=================================================
+POST-IT NOTE (IN CSS)
+=================================================
+*/
+
+#note{
+   width:250px;
+   height:250px;
+   resize: none;
+   background:#F3F19D;
+   padding:15px;
+   border:none;
+   position: absolute;
+   bottom:50px;
+   left:50px;
+   font-family:sans-serif;
+   outline:none;
+   transition:.2s;
+   opacity:0;
+}
+
+  /*
+=================================================
+CALCULATOR
+=================================================
+*/
+.calculator{
+   position:absolute;
+   bottom:50px;
+   right:50px;
+}
+#calc{
+   transition:.2s;
+   opacity:0;
+}
+
+
+ /*
+=================================================
+FONTS
+=================================================
+*/
+
+  .fondamento-regular {
+   font-family: "Fondamento", cursive;
+   font-weight: 400;
+   font-style: normal;
+ }
  
+ .fondamento-regular-italic {
+   font-family: "Fondamento", cursive;
+   font-weight: 400;
+   font-style: italic;
+ }
+ 
+  
